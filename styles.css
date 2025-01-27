@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #1a1a1a;
+    --text-color: #ecf0f1;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: 'Segoe UI', system-ui;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, #3498db, #a6b3ab);
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
+}
+
+#map {
+    height: 500px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+.status-bar {
+    background: rgba(255,255,255,0.1);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 15px 0;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#flightTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    margin-bottom: 60px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+th {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.03);
+}
+
+tr:hover {
+    background-color: rgba(255,255,255,0.08);
+}
+
+.loading {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 20px;
+}
+
+.aircraft-marker {
+    font-size: 24px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px; /* Space for footer */
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    color: rgba(255,255,255,0.7);
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    #map {
+        height: 300px;
+    }
+    
+    th, td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .status-bar {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    footer {
+        position: relative;
+        padding: 15px;
+    }
+}

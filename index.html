@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oman's Radar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Live Oman Air Traffic Radar 🌍</h1>
+        <div id="map"></div>
+        <div class="status-bar" id="status">
+            <span id="updateTime">🕒 Initializing...</span>
+            <span id="flightCount">✈️ 0 Flights Tracked</span>
+        </div>
+        <table id="flightTable">
+            <thead>
+                <tr>
+                    <th>Flight</th>
+                    <th>Altitude</th>
+                    <th>Speed</th>
+                    <th>Route</th>
+                    <th>Aircraft</th>
+                </tr>
+            </thead>
+            <tbody id="flightData">
+                <tr><td colspan="5" class="loading">Loading flight data...</td></tr>
+            </tbody>
+        </table>
+        <footer>Ali Alwaili@2025</footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
