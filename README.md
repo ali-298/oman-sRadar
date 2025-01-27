@@ -2,7 +2,6 @@
 
 A real-time flight tracking simulation for Oman's airspace using fake data. Built with Leaflet.js and modern web technologies.
 
-![Screenshot](screenshot.jpg) <!-- Add your own screenshot -->
 
 ## Features
 
